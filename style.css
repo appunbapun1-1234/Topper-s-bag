@@ -1,11 +1,30 @@
 body {
-    background-color: #0d0208; /* Deep Black */
-    color: #00ff41; /* Matrix Green */
+    background-color: #0d0208;
+    color: #00ff41;
     font-family: 'Courier New', monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height to min-height */
     text-align: center;
-    padding-top: 50px;
 }
-h1 {
-    text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
-    font-size: 3rem;
+
+.container {
+    width: 90%; /* Ensures it doesn't hit the edges of your phone */
+    max-width: 600px;
+}h1 {
+    font-size: 10vw; /* Scales with the screen width */
+    text-shadow: 0 0 10px #00ff41;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.neon-button {
+    padding: 15px 30px; /* Bigger button for easier tapping */
+    font-size: 1rem;
 }
